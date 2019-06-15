@@ -1,0 +1,66 @@
+.landing{
+    &-grid{
+        background-image: url('./img/background_01.png');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+        text-align: center;  
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100vh;
+        position: relative;
+
+        &__title{
+          display: flex;
+          align-items: center;
+          margin: auto 40px 20px auto;
+          padding: 10px;
+          background-color: $colorBlack;
+          border-radius: 10px;
+          opacity: .8;
+          
+          &-name{
+            display: flex;
+            flex-direction: column;
+            align-items: center !important;
+            color: $colorWhite;
+            opacity: .8;
+
+            .developer{
+              margin: 2% auto 1% auto;
+              
+            }
+            .fullname{
+              margin: 1% auto 2% auto;
+            }
+
+          }
+        }
+      }
+}
+
+@include for-tablet-landscape-up{
+  .landing{
+    &-grid{
+      background-image: url('./img/background_01_rotate.png');
+      background-size: cover;
+      
+    }
+  }
+
+}
+
+@include for-tablet-portrait-up{
+  .landing{
+    &-grid{
+      &__title{
+        &-name{
+          h2{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

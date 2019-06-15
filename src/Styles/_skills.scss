@@ -1,0 +1,23 @@
+.skills{
+    display: flex;
+    &-progressbar{
+        width: 100%;
+    }
+    &-progress{
+        font-size: 20px;
+        font-family: $ParagraphFont;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto !important;
+        text-align: center;
+        font-weight: bold;
+        color: #ff6b6b !important;
+        
+        p {
+            margin: 0;
+            font-size: 16px;
+            text-decoration: none;
+        }
+    }
+}

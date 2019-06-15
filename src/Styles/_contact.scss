@@ -1,0 +1,101 @@
+.m {
+    &-contact{
+        margin: auto;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-image: url('./img/background_06.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+
+        &-body{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__grid{
+                text-align: center;
+                //justify-content: center;
+                width: 90%;
+                height: 200px;
+                color: $colorWhite;
+                margin: auto;
+                background: $colorBlack;
+                opacity: 0.8;
+                border-radius: 10px;
+                
+                
+                a {           
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    color: $colorWhite;
+                    margin-top: -10px;
+                }
+                p { 
+                    font-weight: bold;
+                    font-size: 1.5em;
+                    color: $colorWhite;
+                    i{
+                        font-size: 40px;
+                    }
+                } 
+                
+                &-col{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+      
+        }
+    }
+}
+
+@include for-tablet-landscape-up{
+    .m{
+        &-contact{
+            &-body{
+                &__grid{
+                                       
+                    p{
+                        font-size: 0.8em;
+                    }
+                    a{
+                        font-size: 0.8em;
+                    }
+                    .mdl{                        
+                        &-cell{
+                            width: auto;
+                            margin: 0 auto;                                                
+                        }
+                    }                    
+                }            
+            }
+        }
+    }
+}
+@include for-phone-only{
+    .m{
+        &-contact{
+            &-body{
+                &__grid{
+                    padding: 10% 0 !important; 
+                    height: 60%;
+                    display: block !important;
+                    .mdl{                        
+                        &-cell{
+                            margin: 10% 0;              
+                        }
+                    }                    
+                }            
+            }
+        }
+    }
+}
+    
+
+  

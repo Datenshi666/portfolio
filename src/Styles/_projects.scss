@@ -1,0 +1,195 @@
+.m {
+  &-projects{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    &-grid{
+      //height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &__all{
+        display: flex;
+        justify-content: space-between;
+        h4{
+          margin: 0;
+        }
+
+        &-card{
+          margin: auto;
+          &__duet{              
+            color: $colorWhite !important;
+            width: 315px;
+            height: 315px;
+            margin: 10px;
+            padding: 0 !important;
+            background: url('./img/project_duet.jpg');
+            background-position: center;
+            background-size: cover;
+            &:hover{
+              opacity: 0.3;
+            }
+
+          }
+          &__quiz{              
+            color: $colorWhite !important;
+            width: 315px;
+            height: 315px;
+            margin: 10px;
+            padding: 0 !important;
+            background: url('./img/project_quiz.jpg');
+            background-position: center;
+            background-size: cover;
+            &:hover{
+              opacity: 0.3;
+            }            
+          }
+          &__hydrolin{
+            color: $colorWhite !important;
+            width: 315px;
+            height: 315px;
+            margin: 10px;
+            padding: 0 !important;
+            background: url('./img/project_hydrolin.jpg');
+            background-position: center;
+            background-size: cover;
+            &:hover{
+              opacity: 0.3;
+            }
+          }
+          &__graphics{
+            color: $colorWhite !important;
+            width: 315px;
+            height: 315px;
+            margin: 10px;
+            padding: 0 !important;
+            background: url('./img/project_graphic.jpg');
+            background-position: center;
+            background-size: cover;
+            &:hover{
+              opacity: 0.3;
+            }
+          }
+          &__more{
+            color: $colorWhite !important;
+            width: 315px;
+            height: 315px;
+            margin: 10px;
+            padding: 0 !important;
+            background: url('./img/project_morejpg.jpg');
+            background-position: center;
+            background-size: cover;
+            &:hover{
+              opacity: 0.3;
+            }
+          }
+        }
+      }
+    }    
+  }
+  &-tabs{
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 65px;
+    background-image: url('./img/background_03.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    &_grid{
+      width: 100%;
+      height: 10vh;
+      margin-top: 20px;
+    }
+  }
+}
+.mdl{
+  &-card{
+    margin: 0 2% !important;
+    width: 335px !important;
+    background-color: $colorBlack!important;
+    opacity: 0.8!important;
+    border-radius: 10px!important;
+    &__actions{
+      display: flex;
+      justify-content: space-around;
+      a{
+        color: $colorWhite;
+      }
+    }
+    h4{
+      color: $colorWhite;
+      font-size: 22px;
+    }
+  }
+  &-tabs{
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    &__tab{
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+      }
+      &:hover{
+        background-color: rgba(63, 81, 181, 0.8);
+      }
+
+      &-bar{
+        background-color: rgba(63, 81, 181, 0.5);
+        
+      }
+
+      .mdl-tabs__ripple-container{
+        border: 1px solid $colorWhite;
+      }      
+    }
+  }
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after{
+  height: 100% !important;
+}
+
+@include for-tablet-portrait-up{
+  .m{
+    &-projects{
+      width: 70%;
+      margin: 0 auto;
+      &-grid{
+        &__all{
+          &-card{
+            h4{
+              font-size: 16px;
+            }
+            &__duet, &__quiz, &__hydrolin, &__graphics, &__more{
+              width: 200px;
+              height: 200px;
+              margin: 10px auto;
+            }
+            .mdl-card__supporting-text{
+              padding: 5px;
+              width: 100%;
+              text-align: center;
+            } 
+          }
+        }
+      }
+    }
+    &-tabs{
+      &_grid{
+        margin-top: 5%;
+      }
+    }
+  }
+   
+}
