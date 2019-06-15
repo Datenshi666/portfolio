@@ -212,9 +212,14 @@
             width: calc(100% - 16px);
           }
 
-          &-name{         
+          &-name{      
+            .img{
+              height: 100px;
+              width: 100px;
+            }   
             &-fullname{
               text-align: center;
+              
               h2{                
                 float: left;
                 margin: 0 2px;
@@ -225,7 +230,7 @@
           &-text{
             width: 100%;
             h4{
-              margin: 16px auto;
+              margin: 8px auto;
               font-size: 16px;
             }
             p{
@@ -266,7 +271,16 @@
               &.mdl{
                 &-cell{                  
                       &.text{
-                        width: 20%;
+                        width: 40%;
+                        display: flex;
+                        justify-content: center;
+                        
+                        h4{
+                          margin: 0;
+                        }
+                        p{
+                          margin: 5px 0 0 10px;
+                        }
                       }
                       &.logo{
                         width: auto;
@@ -301,6 +315,14 @@
       }
       &__logo{
         justify-content: center;
+        a{
+          .logo-webdevhouse{
+            height: 50px;
+          }
+          .logo-szokstudio{
+            height: 50px;
+          }
+        }
       }
     }
   }

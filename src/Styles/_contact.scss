@@ -84,11 +84,15 @@
             &-body{
                 &__grid{
                     padding: 10% 0 !important; 
-                    height: 60%;
+                    height: auto;
                     display: block !important;
                     .mdl{                        
                         &-cell{
-                            margin: 10% 0;              
+                            margin: 10% 0;
+                            
+                            p{
+                                margin-bottom: 10px;
+                            }
                         }
                     }                    
                 }            
